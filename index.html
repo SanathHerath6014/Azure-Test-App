@@ -1,46 +1,36 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sanath Herath - Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Projects — Sanath Herath</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="hero">
-        <img src="images/myphoto.jpg" alt="Sanath Herath" class="profile-img" />
-        <h1>Sanath Herath</h1>
-        <p>System Engineer | Cloud, Linux, Windows, Cybersecurity</p>
-    </header>
+  <header class="site-header">
+    <div class="wrap">
+      <h1 class="logo">Sanath Herath</h1>
+      <nav>
+        <a href="index.html">Home</a>
+      </nav>
+    </div>
+  </header>
 
-    <section class="section">
-        <h2>About Me</h2>
-        <p>I am a System Engineer with experience in Linux, Windows, Azure, VMware, Firewalls and Cloud technologies.</p>
+  <main class="wrap">
+    <section class="card">
+      <h2>Project Showcase</h2>
+      <article>
+        <h3>Server Patching Automation</h3>
+        <p>Implemented central patch orchestration and reporting with ManageEngine and custom scripts.</p>
+      </article>
+
+      <article>
+        <h3>Azure VM Backup & Restore</h3>
+        <p>Configured recovery services vaults and performed restore drills for business continuity.</p>
+      </article>
     </section>
+  </main>
 
-    <section class="section">
-        <h2>Skills</h2>
-        <ul>
-            <li>Azure, Cloud Engineering</li>
-            <li>Windows & Linux Server Administration</li>
-            <li>VMware ESXi & vCenter</li>
-            <li>Active Directory, GPO</li>
-            <li>Firewalls (FortiGate, Cisco)</li>
-        </ul>
-    </section>
-
-    <section class="section">
-        <h2>Projects</h2>
-        <ul>
-            <li>ISO 27001 Implementation</li>
-            <li>Azure Backup & Cloud Infrastructure</li>
-            <li>Zimbra Mail Server</li>
-            <li>ManageEngine Patch Manager</li>
-        </ul>
-    </section>
-
-    <footer>
-        <p>© 2025 Sanath Herath | Portfolio</p>
-    </footer>
+  <footer class="site-footer"><div class="wrap"><small>© <span id="year"></span> Sanath</small></div></footer>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
 </body>
 </html>
