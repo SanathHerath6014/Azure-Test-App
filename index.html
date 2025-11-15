@@ -1,36 +1,77 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Projects — Sanath Herath</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sanath Herath — IT Professional</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="wrap">
       <h1 class="logo">Sanath Herath</h1>
       <nav>
-        <a href="index.html">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
   <main class="wrap">
-    <section class="card">
-      <h2>Project Showcase</h2>
-      <article>
-        <h3>Server Patching Automation</h3>
-        <p>Implemented central patch orchestration and reporting with ManageEngine and custom scripts.</p>
-      </article>
+    <section class="hero">
+      <h2>System Engineer • Cloud & Infrastructure</h2>
+      <p>Experienced in Azure, Linux & Windows server administration, virtualization, backups and security.</p>
+      <a class="btn" href="#projects">View Projects</a>
+    </section>
 
-      <article>
-        <h3>Azure VM Backup & Restore</h3>
-        <p>Configured recovery services vaults and performed restore drills for business continuity.</p>
-      </article>
+    <section id="about" class="card">
+      <h3>About</h3>
+      <p>Hi — I'm Sanath. I manage servers, backups, patching, and cloud deployments. I enjoy automation and secure, reliable infrastructure.</p>
+    </section>
+
+    <section id="skills" class="card">
+      <h3>Skills</h3>
+      <ul class="grid">
+        <li>Azure (VMs, Backup, App Service)</li>
+        <li>Linux & Windows Server</li>
+        <li>VMware / Virtualization</li>
+        <li>Zimbra, ManageEngine, FortiGate</li>
+        <li>Automation & Scripting</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="card">
+      <h3>Selected Projects</h3>
+      <div class="projects">
+        <article>
+          <h4>Patch Management Automation</h4>
+          <p>Designed and operated scheduled and emergency patching workflows for on-prem & cloud servers.</p>
+        </article>
+        <article>
+          <h4>Azure App Deployment</h4>
+          <p>Deployed static sites and apps to Azure App Service using GitHub Actions and Deployment Center.</p>
+        </article>
+      </div>
+      <a class="btn ghost" href="projects.html">More projects</a>
+    </section>
+
+    <section id="contact" class="card">
+      <h3>Contact</h3>
+      <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+      <p>GitHub: <a href="https://github.com/your-username">github.com/your-username</a></p>
     </section>
   </main>
 
-  <footer class="site-footer"><div class="wrap"><small>© <span id="year"></span> Sanath</small></div></footer>
-  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+  <footer class="site-footer">
+    <div class="wrap">
+      <small>© <span id="year"></span> Sanath Herath</small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
