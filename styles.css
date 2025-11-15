@@ -5,6 +5,20 @@
   --muted:#6b7280;
   --pad:18px;
 }
+.about-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile-photo {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #e6e9ef;
+}
+
 *{box-sizing:border-box}
 body{
   margin:0;
